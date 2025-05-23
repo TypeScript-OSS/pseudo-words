@@ -1,11 +1,12 @@
 {
-  "name": "yasorted-array",
-  "version": "1.0.3",
-  "description": "An efficient sorted array",
+  "name": "pseudo-words",
+  "version": "1.0.0",
+  "description": "A very small and simple English-like fake word generator for testing and other purposes.",
   "keywords": [
     "browser",
-    "data-structure",
-    "array",
+    "data",
+    "random",
+    "generator",
     "node"
   ],
   "main": "./lib/cjs/exports.js",
@@ -16,8 +17,8 @@
     "require": "./lib/cjs/exports.js"
   },
   "types": "./lib/exports.d.ts",
-  "repository": "https://github.com/TypeScript-OSS/yasorted-array.git",
-  "homepage": "https://typescript-oss.github.io/yasorted-array/",
+  "repository": "https://github.com/TypeScript-OSS/pseudo-words.git",
+  "homepage": "https://typescript-oss.github.io/pseudo-words/",
   "license": "MIT",
   "private": false,
   "scripts": {

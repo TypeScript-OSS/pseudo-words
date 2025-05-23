@@ -1,9 +1,9 @@
-# yasorted-array
+# pseudo-words
 
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-An efficient sorted array.
+A very small and simple English-like fake word generator for testing and other purposes.
 
 Provided as:
 
@@ -13,39 +13,15 @@ Provided as:
 ## Usage Examples
 
 ```typescript
-// Basics
-const numbers = new SortedArray<number>((a,b) => b - a);
-console.log(numbers.add(3)); // 0
-console.log(numbers.add(1)); // 1
-console.log(numbers.add(2)); // 1
-console.log(numbers.firstIndexOf(1)); // 2
-console.log(numbers.firstIndexOf(2)); // 1
-console.log(numbers.firstIndexOf(3)); // 0
-console.log(numbers.firstIndexOf(4)); // -1
+// Generate a capitalized fake word from 2-4 syllables
+console.log(generatePseudoWord());
 
-for (const element of numbers) {
-  console.log(element)
-} // 3, 2, 1
+// Generate a non-capitalized fake word from 1-6 syllables
+console.log(generatePseudoWord(1, 6, false));
 
-numbers.removeFirst(2); // 1
-numbers.clear();
-
-// Add Multiple
-console.log(numbers.addMultiple(3, 1, 2)); // [0, 1, 2]
-console.log(numbers.firstIndexOf(1)); // 2
-console.log(numbers.firstIndexOf(2)); // 1
-console.log(numbers.firstIndexOf(3)); // 0
-console.log(Array.from(numbers)); // [3, 2, 1]
-
-console.log(numbers.addMultiple(0, 0.5, 1.5, 2.5, 3.5)); // [0, 2, 4, 6, 7]
-console.log(Array.from(numbers)); // [3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0]
-
-// Remove Multiple
-console.log(numbers.removeMultiple(0, 2)); // [7, 3]
-console.log(Array.from(numbers)); // [3.5, 3, 2.5, 1.5, 1, 0.5]
 ```
 
-[API Docs](https://typescript-oss.github.io/yasorted-array/)
+[API Docs](https://typescript-oss.github.io/pseudo-words/)
 
 ## Thanks
 
@@ -55,10 +31,10 @@ Be sure to check out our other [TypeScript OSS](https://github.com/TypeScript-OS
 
 <!-- Definitions -->
 
-[downloads-badge]: https://img.shields.io/npm/dm/yasorted-array.svg
+[downloads-badge]: https://img.shields.io/npm/dm/pseudo-words.svg
 
-[downloads]: https://www.npmjs.com/package/yasorted-array
+[downloads]: https://www.npmjs.com/package/pseudo-words
 
-[size-badge]: https://img.shields.io/bundlephobia/minzip/yasorted-array.svg
+[size-badge]: https://img.shields.io/bundlephobia/minzip/pseudo-words.svg
 
-[size]: https://bundlephobia.com/result?p=yasorted-array
+[size]: https://bundlephobia.com/result?p=pseudo-words

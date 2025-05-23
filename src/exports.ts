@@ -1,1 +1,1 @@
-export * from './SortedArray.js';
+export * from './generatePseudoWord.js';

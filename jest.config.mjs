@@ -1,16 +1,13 @@
 export default {
   preset: 'ts-jest',
   extensionsToTreatAsEsm: ['.ts'],
-  testEnvironment: 'jsdom',
+  testEnvironment: 'node',
   coverageReporters: ['text', 'html'],
-  globals: {
-    'ts-jest': {
-      isolatedModules: true,
-      useESM: true
-    }
-  },
   moduleNameMapper: {
-    '(.+)\\.js': '$1'
+    '^(\\.{1,2}/.*)\\.js$': '$1'
+  },
+  transform: {
+    '^.+\\.tsx?$': ['ts-jest', { useESM: true }]
   },
   coverageThreshold: {
     global: {
