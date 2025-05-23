@@ -18,7 +18,24 @@ console.log(generatePseudoWord());
 
 // Generate a non-capitalized fake word from 1-6 syllables
 console.log(generatePseudoWord(1, 6, false));
+```
 
+### Example Generated Words
+
+```plaintext
+Ayogza
+Ociruf
+Ezobrzi
+Eyetriy
+Xaheclamsat
+Xoizgrasheth
+Roclicerin
+Odxufegr
+Metrnech
+Wishorkas
+Icljivtrep
+Acaczibryi
+Iwlamoctov
 ```
 
 [API Docs](https://typescript-oss.github.io/pseudo-words/)
